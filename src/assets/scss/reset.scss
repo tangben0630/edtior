@@ -1,0 +1,128 @@
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: -apple-system, "SF UI Text", "Helvetica Neue", Arial, "PingFang SC", "Hiragino SansGB", "Microsoft YaHei", "WenQuanYi Zen Hei", sans-serif;
+  font-size: 12px;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1.4;
+  min-width: 1200px;
+  height: 100%;
+  background-color: #f8f8f8;
+}
+
+body,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+button,
+th,
+div,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+table {
+  font-size: inherit;
+}
+
+input,
+select {
+  font-size: 100%;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: normal;
+  outline: medium;
+  border: 0;
+  background: #fff;
+}
+
+textarea {
+  outline: medium;
+  border: 0;
+  background: #fff;
+  resize: none;
+  overflow: hidden;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+button {
+  overflow: visible;
+}
+
+th,
+em,
+strong,
+b,
+address,
+cite {
+  font-style: normal;
+  font-weight: normal;
+}
+
+li {
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+}
+
+img,
+fieldset {
+  border: 0 none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+.clearfix:after {
+  /*伪元素是行内元素 正常浏览器清除浮动方法*/
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.vc-sketch {
+  padding: 5px 5px 0 !important;
+}

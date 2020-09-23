@@ -1,0 +1,7 @@
+dist/
+node_modules/
+public/sass/
+.vscode/
+.sass-cache/*
+.idea/
+.history/

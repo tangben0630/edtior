@@ -1,0 +1,135 @@
+@import "./theme.scss";
+
+$BacColor: #f8f8f8; //背景色
+
+$fontColor1: #0d171b; //字体
+$iconColor: #415159; //字体
+$fontColor2: #435862;
+$fontColor3: #7d8694;
+$fontColor4: #ccc;
+$fontColor5: #e5e5e5;
+$fontColor6: #acacac;
+$fontRed: #f90220; //右上角颜色
+$home: #fa6400; //右上角颜色
+$hoverColor: #f1f1f1; //右上角颜色
+
+$borderColor: #efefef; //边框
+
+$index1: 9; //z-index
+$index2: 99;
+$index3: 999;
+$index4: 9999;
+$index5: 99999;
+
+@mixin bacColor($bacColor) {
+  background-color: $bacColor;
+
+  [theme="theme1"] & {
+    background-color: $baseColor1;
+  }
+
+  [theme="theme2"] & {
+    background-color: $baseColor2;
+  }
+
+  [theme="theme3"] & {
+    background-color: $baseColor3;
+  }
+  [theme="theme4"] & {
+    background-color: $baseColor4;
+  }
+}
+
+@mixin darkColor($darkColor1) {
+  background-color: $darkColor1;
+
+  [theme="theme1"] & {
+    background-color: $darkColor1;
+  }
+
+  [theme="theme2"] & {
+    background-color: $darkColor2;
+  }
+
+  [theme="theme3"] & {
+    background-color: $darkColor3;
+  }
+  [theme="theme4"] & {
+    background-color: $darkColor4;
+  }
+}
+
+@mixin borderColor($bacColor) {
+  border-color: $bacColor;
+
+  [theme="theme1"] & {
+    border-color: $baseColor1;
+  }
+
+  [theme="theme2"] & {
+    border-color: $baseColor2;
+  }
+
+  [theme="theme3"] & {
+    border-color: $baseColor3;
+  }
+  [theme="theme4"] & {
+    border-color: $baseColor4;
+  }
+}
+
+@mixin borderBottomColor($bacColor) {
+  //首页标志
+  border-bottom-color: $bacColor;
+
+  [theme="theme1"] & {
+    border-bottom-color: $baseColor1;
+  }
+
+  [theme="theme2"] & {
+    border-bottom-color: $baseColor2;
+  }
+
+  [theme="theme3"] & {
+    border-bottom-color: $baseColor3;
+  }
+  [theme="theme4"] & {
+    border-bottom-color: $baseColor4;
+  }
+}
+
+@mixin fontColor($bacColor) {
+  color: $bacColor;
+
+  [theme="theme1"] & {
+    color: $baseColor1;
+  }
+
+  [theme="theme2"] & {
+    color: $baseColor2;
+  }
+
+  [theme="theme3"] & {
+    color: $baseColor3;
+  }
+  [theme="theme4"] & {
+    color: $baseColor4;
+  }
+}
+
+@mixin border($color) {
+  border: 1px solid $color;
+}
+
+@mixin sign($right, $top) {
+  // .right-sign::after {
+  position: absolute;
+  content: "";
+  background: $fontRed;
+  width: 6px;
+  height: 6px;
+  border-radius: 5px;
+  right: $right;
+  top: $top;
+  // }
+}
